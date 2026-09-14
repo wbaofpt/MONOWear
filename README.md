@@ -45,6 +45,12 @@ Tạo database và các bảng:
 mysql -u root -p < backend/server/schema.sql
 ```
 
+Nạp thêm dữ liệu mẫu cho catalog, đánh giá, đơn hàng và inbox:
+
+```bash
+mysql -u root -p < backend/server/seed.sql
+```
+
 Tạo file `.env` ở thư mục gốc dựa trên [.env.example](.env.example):
 
 ```env

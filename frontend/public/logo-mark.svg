@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none">
+  <title>MONO Wear</title>
+  <circle cx="20" cy="20" r="18" fill="#FCFBF8" stroke="#24211F" stroke-width="1.5"/>
+  <path d="M10 12h5l5 11 5-11h5v1h-2v14h2v1h-7v-1h2V15l-5 11h-1l-5-11v12h2v1h-6v-1h2V13h-2z" fill="#24211F"/>
+</svg>
