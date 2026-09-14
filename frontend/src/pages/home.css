@@ -1,5 +1,5 @@
 .mw-home {
-  --pop: #d4f542;
+  --pop: #e9e5df;
   --dark: #20211e;
   color: var(--dark);
   background: #fcfbf8;
@@ -10,14 +10,15 @@
 .mw-home h1,
 .mw-home h2,
 .mw-home h3 {
-  font-family: Inter, sans-serif;
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
 }
 .mw-home h2 {
   font-size: clamp(28px, 3vw, 48px);
   line-height: 1.12;
   letter-spacing: -0.045em;
   margin: 0;
-  font-weight: 800;
+  font-weight: 500;
 }
 .mw-home h2 em,
 .mw-manifesto em {
@@ -35,7 +36,7 @@
   touch-action: manipulation;
 }
 .mw-home :is(button, a, input):focus-visible {
-  outline: 3px solid #596a09;
+  outline: 3px solid #806445;
   outline-offset: 5px;
 }
 .mw-hero {
@@ -57,8 +58,8 @@
 .mw-hero h1 {
   font-size: clamp(44px, 5.5vw, 88px);
   line-height: 1.06;
-  letter-spacing: -0.065em;
-  font-weight: 900;
+  letter-spacing: -0.045em;
+  font-weight: 500;
   margin: 18px 0 24px;
 }
 .mw-hero h1 span {
@@ -85,7 +86,7 @@
   padding: 14px 22px;
   font-size: 14px;
   font-weight: 600;
-  border-radius: 6px;
+  border-radius: 2px;
   transition: transform 0.2s;
 }
 .mw-actions a {
@@ -119,19 +120,6 @@
   object-fit: cover;
   object-position: 50% 28%;
 }
-.mw-sticker {
-  position: absolute;
-  right: 24px;
-  top: 24px;
-  padding: 24px 16px;
-  background: #b5a5f1;
-  border-radius: 50%;
-  font-weight: 900;
-  transform: rotate(12deg);
-  line-height: 1.2;
-  text-align: center;
-  box-shadow: 4px 4px 0 var(--dark);
-}
 .mw-photo-label {
   position: absolute;
   bottom: 24px;
@@ -151,7 +139,9 @@
   justify-content: space-between;
   gap: 20px;
   font-weight: 800;
-  font-size: clamp(11px, 1.3vw, 18px);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  font-weight: 500;
 }
 .mw-section {
   padding: 56px 5.2vw;
@@ -237,7 +227,7 @@
   align-items: center;
 }
 .mw-moods {
-  background: #eee9f6;
+  background: #f1eeea;
   scroll-margin-top: 100px;
 }
 .mw-mood-grid {
@@ -311,7 +301,7 @@
 .mw-story {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background: #f3bda9;
+  background: #e9e5df;
 }
 .mw-story > div:first-child {
   padding: 40px 5.2vw;
@@ -345,7 +335,7 @@
 }
 .mw-help span {
   font-size: 12px;
-  color: #596a09;
+  color: #806445;
   font-weight: 700;
 }
 .mw-help h3 {
@@ -419,14 +409,14 @@
 }
 .mw-home .mw-waiting {
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(12px);
 }
 @media (hover: hover) {
   .mw-mood:hover img {
-    transform: scale(1.045);
+    transform: scale(1.025);
   }
   .mw-home .mw-button:hover {
-    transform: translateY(-3px);
+    transform: translateY(-2px);
   }
 }
 @media (max-width: 1100px) {

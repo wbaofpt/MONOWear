@@ -11,19 +11,19 @@ const photo = (id: string) =>
 const moods = [
   {
     style: "everyday",
-    title: "Ra phố. Là chính mình.",
+    title: "Thiết yếu cho mỗi ngày.",
     label: "01 / EVERYDAY",
     image: "photo-1483985988355-763728e1935b",
   },
   {
     style: "tailoring",
-    title: "Lịch sự, không cứng nhắc.",
+    title: "Thanh lịch trong từng đường nét.",
     label: "02 / SOFT TAILORING",
     image: "photo-1490481651871-ab68de25d43d",
   },
   {
     style: "accessories",
-    title: "Chi tiết làm nên chất riêng.",
+    title: "Điểm nhấn vừa đủ.",
     label: "03 / FINISHING TOUCHES",
     image: "photo-1594223274512-ad4803739b7c",
   },
@@ -113,12 +113,12 @@ export default function HomePage({
       <section className="mw-hero">
         <div className="mw-hero-copy">
           <p className="mw-kicker">
-            <Sparkles size={16} /> MONO WEAR / YOUR DAILY EXPRESSION
+            <Sparkles size={16} /> MONO WEAR / THE EVERYDAY COLLECTION
           </p>
           <h1>
-            MẶC CHẤT.
+            Everyday,
             <br />
-            <span>SỐNG THẬT.</span>
+            <span>elevated.</span>
           </h1>
           <p>
             Một chút ngẫu hứng. Một chút khác biệt. Tìm những món đồ hợp với bạn
@@ -129,41 +129,25 @@ export default function HomePage({
               Khám phá ngay <ArrowUpRight size={20} />
             </button>
             <a href="#mono-edit">
-              Tìm chất riêng <ArrowRight size={18} />
+              Gợi ý phối đồ <ArrowRight size={18} />
             </a>
-          </div>
-          <div className="mw-hero-foot">
-            <span>LESS RULES.</span>
-            <span>MORE YOU. ↗</span>
           </div>
         </div>
         <div className="mw-hero-photo">
           <img
-            src={photo("photo-1529139574466-a303027c1d8b")}
-            alt="Phong cách đường phố với kính màu sắc và áo đỏ nổi bật"
+            src={photo("photo-1496747611176-843222e1e57c")}
+            alt="Trang phục nhẹ nhàng trong ánh sáng tự nhiên"
             fetchPriority="high"
           />
-          <span className="mw-sticker">
-            100%
-            <br />
-            YOURSELF
-          </span>
-          <span className="mw-photo-label">THE STREETS ARE YOURS.</span>
+          <span className="mw-photo-label">THE ART OF EVERYDAY DRESSING.</span>
         </div>
       </section>
-      <div className="mw-ribbon">
-        <span>YOUR STYLE. YOUR RULES.</span>
-        <Sparkles aria-hidden="true" />
-        <span>MẶC THEO CÁCH CỦA BẠN</span>
-        <ArrowUpRight aria-hidden="true" />
-        <span>MONO WEAR</span>
-      </div>
       <section className="mw-section" data-reveal>
         <div className="mw-heading">
           <div>
             <p className="mw-kicker">THE DAILY ROTATION</p>
             <h2>
-              Tủ đồ cần <em>chất mới.</em>
+              Những món đồ <em>chủ lực.</em>
             </h2>
           </div>
           <button onClick={() => onNav("shop")}>
@@ -177,7 +161,7 @@ export default function HomePage({
           <div>
             <p className="mw-kicker">THE MONO EDIT</p>
             <h2>
-              Hôm nay, bạn <em>mood gì?</em>
+              Một tủ đồ, <em>nhiều nhịp sống.</em>
             </h2>
           </div>
           <p>
@@ -204,15 +188,6 @@ export default function HomePage({
             </button>
           ))}
         </div>
-      </section>
-      <section className="mw-manifesto" data-reveal>
-        <span>KHÔNG CẦN GIỐNG AI.</span>
-        <p>
-          Chỉ cần <em>giống bạn.</em>
-        </p>
-        <button onClick={() => onNav("about")}>
-          Gặp gỡ MONO <ArrowUpRight size={22} />
-        </button>
       </section>
       {products.length > 5 && (
         <section className="mw-section">
@@ -269,9 +244,9 @@ export default function HomePage({
         <div>
           <p className="mw-kicker">JOIN THE MONO CLUB</p>
           <h2>
-            Đừng bỏ lỡ
+            Cảm hứng mới,
             <br />
-            <em>điều hay ho.</em>
+            <em>gửi riêng bạn.</em>
           </h2>
           <p>
             Đăng ký email để nhận tin bộ sưu tập và cảm hứng phối đồ từ MONO.

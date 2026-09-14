@@ -37,11 +37,23 @@ export default function ShopPage({
       ? styleProducts
       : styleProducts.filter((p) => p.category.includes(filter));
   return (
-    <section className="shop-page">
-      <div className="shop-title">
-        <p className="eyebrow">MONO / SHOP</p>
-        <h1>{initialStyle ? styleLabels[initialStyle] : "Tất cả sản phẩm"}</h1>
-        <p>Được thiết kế để sống cùng bạn, mỗi ngày.</p>
+    <section className="shop-page shop-page-new">
+      <div className="shop-intro-new">
+        <div>
+          <p className="eyebrow">MONO / COLLECTION 01</p>
+          <h1>
+            {initialStyle
+              ? styleLabels[initialStyle]
+              : "Mặc cho đời sống thật."}
+          </h1>
+        </div>
+        <div className="shop-intro-copy">
+          <span>THE EVERYDAY EDIT</span>
+          <p>
+            Những thiết kế được chọn để đi cùng bạn từ buổi sáng bận rộn đến
+            cuối tuần thong thả.
+          </p>
+        </div>
       </div>
       {initialStyle && (
         <div className="shop-style-banner">
@@ -53,21 +65,26 @@ export default function ShopPage({
           <button onClick={() => onNav("shop")}>Xóa bộ lọc</button>
         </div>
       )}
-      <div className="filters">
-        {["Tất cả", "Nam", "Nữ", "Phụ kiện"].map((f) => (
-          <button
-            className={filter === f ? "active" : ""}
-            onClick={() => setFilter(f)}
-            key={f}
-          >
-            {f}
-          </button>
-        ))}
+      <div className="shop-toolbar">
+        <div className="filters">
+          {["Tất cả", "Nam", "Nữ", "Phụ kiện"].map((f) => (
+            <button
+              className={filter === f ? "active" : ""}
+              onClick={() => setFilter(f)}
+              key={f}
+            >
+              {f}
+            </button>
+          ))}
+        </div>
         <button className="filter-sort">
           Sắp xếp: Mới nhất <ChevronDown size={15} />
         </button>
       </div>
-      <p className="results-count">{shown.length} sản phẩm</p>
+      <div className="shop-results-head">
+        <p className="results-count">{shown.length} sản phẩm</p>
+        <span>Thiết kế có chủ đích · Chất liệu được tuyển chọn</span>
+      </div>
       <div className="product-grid shop-grid">
         {shown.map((p) => (
           <ProductCard
